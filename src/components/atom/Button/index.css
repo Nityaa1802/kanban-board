@@ -9,8 +9,13 @@
     padding: 7px 15px;
     border: 1px solid gainsboro;
     box-shadow: 2px 4px 10px gainsboro;
+    cursor: pointer;
+    width: 100%
 }
 
 .button p {
     margin: 0px 5px 0px 0px;
+}
+.label {
+    text-transform: capitalize;
 }
