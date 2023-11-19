@@ -2,10 +2,11 @@
     background-color: white;
     height: 10vh;
     z-index: 10;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.128),
-        0 6px 10px 0 rgba(0, 0, 0, 0.096); */
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.128),
+        0 6px 8px 0 rgba(0, 0, 0, 0.096);
     padding: 0px 50px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid gainsboro;
+    margin-bottom: 16px;
 }
