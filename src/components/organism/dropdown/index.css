@@ -1,0 +1,12 @@
+#dropdown {
+    position: fixed;
+    top: 8vh;
+    left: 3vw;
+    height: 100px;
+    width: 250px;
+    background-color: #f8f8fa;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 16px;
+    z-index: 100;
+}
