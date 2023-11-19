@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import './App.css';
 import Body from './components/templates/body';
 import Navbar from './components/templates/navbar';
@@ -31,12 +31,16 @@ function App() {
       }
     })();
   }, []);
+
   useEffect(() => {
+    changeGroupedTickets();
+  }, [tickets, ordering, grouping]);
+
+  const changeGroupedTickets = useCallback(() => {
     if (grouping === 'priority') setOrdering('title');
     sessionStorage.setItem('groupState', grouping);
     sessionStorage.setItem('orderState', ordering);
-    const dd = getGroupedTickets(tickets, grouping, ordering);
-    setGroupedTickets(dd);
+    setGroupedTickets(getGroupedTickets(tickets, grouping, ordering));
   }, [tickets, ordering, grouping]);
 
   return (
