@@ -1,0 +1,38 @@
+#tickets{
+    background-color: white;
+    border-radius: 10px;
+    width: 16vw;
+    padding: 16px;
+    display: flex;
+    min-width: 240px;
+}
+#left{
+    width: 95%;
+}
+#text{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+#details{
+    display: flex;
+    gap: 8px;
+}
+.tags{
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px solid gainsboro;
+}
+#avtar{
+    margin:0px;
+}
+#heading {
+    display: flex;
+    gap: 8px;
+}
+#status{
+    width: 16px;
+    height: 16px;
+}

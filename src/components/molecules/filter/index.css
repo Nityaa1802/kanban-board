@@ -1,0 +1,22 @@
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 16px;
+}
+
+.filterDropdown {
+    position: absolute;
+    background-color: white;
+    left: 170px;
+    width: 90px;
+    /* border: 1px solid gainsboro; */
+}
+.filterDropdown div {
+    border: 1px solid gainsboro;
+    margin: none;
+    padding: 8px;
+}
+label{
+    text-transform: capitalize;
+}
