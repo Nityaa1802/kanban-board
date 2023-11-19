@@ -6,13 +6,13 @@ export default function Button({
   Icon,
   placeHolder,
 }: {
-  onClick: () => void;
+  onClick:  any;
   Icon?: any;
   placeHolder: string;
 }) {
   return (
     <button className='button' onClick={onClick}>
-      <Icon />
+      {Icon && <Icon />}
       <p>{placeHolder}</p>
       <ChevronDown className='chevron' />
     </button>
