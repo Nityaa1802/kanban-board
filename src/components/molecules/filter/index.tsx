@@ -22,13 +22,16 @@ export default function Filters({
       <span id='label'>
         <SubHeading text={label} />
       </span>
-      <Button
-        placeHolder={value}
-        onClick={(event: any) => {
-          event.stopPropagation();
-          setShowFilterDropdown(showFilterDropdown !== label ? label : '');
-        }}
-      />
+      <div id='button' className='label'>
+        <Button
+          placeHolder={value}
+          onClick={(event: any) => {
+            event.stopPropagation();
+            setShowFilterDropdown(showFilterDropdown !== label ? label : '');
+          }}
+          open={showFilterDropdown === label}
+        />
+      </div>
       {showFilterDropdown === label && (
         <div
           className='filterDropdown'
@@ -36,11 +39,13 @@ export default function Filters({
         >
           {options.map((item) => (
             <div
+              id='options'
               onClick={() => {
                 setFilterValue(item);
                 setShowFilterDropdown('');
               }}
               key={item}
+              className='label'
             >
               {item}
             </div>

@@ -12,12 +12,21 @@
     width: 90px;
     /* border: 1px solid gainsboro; */
 }
-.filterDropdown div {
+#options {
     border: 1px solid gainsboro;
     margin: none;
     padding: 8px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    font-size: small;
 }
-label{
+#options:hover {
+box-shadow: 0 0 12px gainsboro;
+border: 2px solid gainsboro;
+}
+#button{
+    width: 110px;
+}
+.label{
     text-transform: capitalize;
 }

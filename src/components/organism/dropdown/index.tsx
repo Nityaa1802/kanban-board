@@ -28,6 +28,7 @@ export default function Dropdown({
         }}
         placeHolder='Display'
         Icon={Filter}
+        open={showDropdown}
       />
       {showDropdown && (
         <div

@@ -32,7 +32,7 @@ export default function Tickets({ tickets }: { tickets: Ticket }) {
             </div>
           )}
           <div className='tags'>
-            <SubHeading text={tickets.tag[0]} />
+            <SubHeading text={`• ${tickets.tag[0]}`} />
           </div>
         </div>
       </div>
