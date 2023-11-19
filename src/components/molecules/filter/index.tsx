@@ -1,6 +1,7 @@
 import Button from '../../atom/Button';
 import { SubHeading } from '../../atom/Heading';
 import './index.css';
+
 export default function Filters({
   label,
   setShowFilterDropdown,

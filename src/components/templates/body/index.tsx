@@ -5,6 +5,7 @@ import { TicketContext } from '../../../context/tickets';
 import Rows from '../../organism/rows';
 import Categories from '../../molecules/catagories';
 import { getIcon, priority, status } from '../../../util/constants';
+
 export default function Body() {
   const { groupedTickets, grouping, users } = useContext(TicketContext);
   function getHeader() {

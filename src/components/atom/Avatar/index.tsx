@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import './index.css';
-import { TicketContext } from '../../../context/tickets';
 import { User } from '../../../util/utils';
 import { getAvtarColors } from '../../../util/constants';
 export default function Avatar({ user }: { user: User }) {

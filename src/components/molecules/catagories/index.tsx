@@ -1,6 +1,5 @@
 import './index.css';
 import Heading, { SubHeading } from '../../atom/Heading';
-import { ReactComponent as Filter } from '../../../assets/icons/filter.svg';
 import { ReactComponent as Plus } from '../../../assets/icons/plus.svg';
 import { ReactComponent as OptionDots } from '../../../assets/icons/options-dots.svg';
 import Avatar from '../../atom/Avatar';
